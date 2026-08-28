@@ -17,3 +17,5 @@ __pycache__/
 # Env files
 .env
 .env.local
+week-01/python-refresher/code/study-buddy/exports/report.csv
+week-01/python-refresher/code/study-buddy/exports/report.json
