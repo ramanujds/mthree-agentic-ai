@@ -1,0 +1,19 @@
+# Assistant instructions — local only, not published with the repo
+CLAUDE.md
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Env files
+.env
+.env.local
