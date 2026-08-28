@@ -1,0 +1,10 @@
+services:
+  study-buddy:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      # Bind mount the whole project so local edits show up in the container
+      # without a rebuild (see week-01/docker/notes/01-docker-essentials.md#4).
+      - .:/app
+    command: uv run uvicorn main:app --host 0.0.0.0 --port 8000 --reload
