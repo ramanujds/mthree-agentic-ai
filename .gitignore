@@ -19,3 +19,5 @@ __pycache__/
 .env.local
 week-01/python-refresher/code/study-buddy/exports/report.csv
 week-01/python-refresher/code/study-buddy/exports/report.json
+
+demos/
