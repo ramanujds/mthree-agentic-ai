@@ -1,0 +1,5 @@
+services:
+  study-buddy:
+    image: ram1uj/study-buddy:v1
+    ports:
+      - "8000:8000"
