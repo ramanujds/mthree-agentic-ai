@@ -25,7 +25,7 @@ services:
       - mysql
     restart: always
     ports:
-      - "8081-8089:8080"
+      - "8081:8080"
     networks:
       - inventory-order-network
     environment:
@@ -39,7 +39,7 @@ services:
   order-service:
     image: ram1uj/part-order-service:latest
     ports:
-      - "8091-8099:8080"
+      - "8082:8080"
     depends_on:
       - mysql
     restart: always
