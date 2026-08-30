@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Study Buddy</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 Study Buddy</h1>
+    <p class="subtitle">Notes &amp; quiz-score tracker — Python refresher case study</p>
+  </header>
+
+  <main>
+    <section class="panel" id="notes-panel">
+      <h2>Notes</h2>
+
+      <form id="note-form">
+        <input type="text" id="note-topic" placeholder="Topic (e.g. numpy)" required />
+        <textarea id="note-content" placeholder="What did you learn?" required></textarea>
+        <button type="submit">Add note</button>
+      </form>
+
+      <div class="search-row">
+        <input type="text" id="note-search" placeholder="Search notes..." />
+        <button id="note-search-btn">Search</button>
+        <button id="note-clear-btn" class="secondary">Clear</button>
+      </div>
+
+      <div id="topic-counts" class="tag-row"></div>
+      <ul id="notes-list" class="item-list"></ul>
+    </section>
+
+    <section class="panel" id="scores-panel">
+      <h2>Quiz Scores</h2>
+
+      <form id="score-form">
+        <input type="text" id="score-topic" placeholder="Topic (e.g. pandas)" required />
+        <input type="number" id="score-value" placeholder="Score" min="0" required />
+        <input type="number" id="score-max" placeholder="Max score" min="1" required />
+        <button type="submit">Log score</button>
+      </form>
+
+      <div id="stats-summary" class="stats-summary"></div>
+      <table id="stats-table" class="stats-table">
+        <thead>
+          <tr><th>Topic</th><th>Mean %</th><th>Attempts</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="panel" id="export-panel">
+      <h2>Export Report</h2>
+      <p class="hint">Writes a JSON report and a CSV report to <code>exports/</code> — concurrently.</p>
+      <button id="export-btn">Export report</button>
+      <div id="export-result"></div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
