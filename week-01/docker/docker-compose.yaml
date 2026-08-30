@@ -1,0 +1,55 @@
+name: inventory-order-app
+networks:
+  inventory-order-network:
+
+volumes:
+  mysql-data:
+services:
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: inventory_order_db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    networks:
+      - inventory-order-network
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+  inventory-service:
+    image: ram1uj/part-inventory-service:latest
+    depends_on:
+      - mysql
+    restart: always
+    ports:
+      - "8081-8089:8080"
+    networks:
+      - inventory-order-network
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - MYSQL_HOST=mysql
+      - MYSQL_PORT=3306
+      - MYSQL_DATABASE=inventory_order_db
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+
+  order-service:
+    image: ram1uj/part-order-service:latest
+    ports:
+      - "8091-8099:8080"
+    depends_on:
+      - mysql
+    restart: always
+    networks:
+      - inventory-order-network
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - MYSQL_HOST=mysql
+      - MYSQL_PORT=3306
+      - MYSQL_DATABASE=inventory_order_db
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+      - INVENTORY_SERVICE_URL=http://inventory-service:8080
