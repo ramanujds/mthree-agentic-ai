@@ -20,6 +20,11 @@ def get_response_from_llm(prompt):
         return f"Error: {response.status_code}, {response.text}"
 
 if __name__ == "__main__":
-        user_input = "Explain what is kubernetes in simple words."
+    print("Welcome to the AI Assistant! Type 'exit' to quit.")
+    while True:
+        user_input = input("You: ")
+        if user_input.lower() == 'exit':
+            print("Goodbye!")
+            break
         response = get_response_from_llm(user_input)
         print(f"Assistant: {response}")
