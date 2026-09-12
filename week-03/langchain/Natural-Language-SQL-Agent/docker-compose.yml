@@ -1,0 +1,25 @@
+# Postgres for the natural-language SQL agent demo. Seeded automatically on
+# first start from db/init/*.sql (Postgres runs anything in
+# /docker-entrypoint-initdb.d exactly once, when the data volume is empty).
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: nlsql-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: chinook
+      POSTGRES_PASSWORD: chinook
+      POSTGRES_DB: chinook
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U chinook -d chinook"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgdata:
