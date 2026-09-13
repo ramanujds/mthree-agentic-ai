@@ -1,0 +1,17 @@
+Onboarding FAQ
+
+Q: How do I get a laptop?
+A: New hires receive a laptop on their first day, shipped by the IT
+department. If it hasn't arrived by day 2, contact it-support@example.com.
+
+Q: How do I set up my email?
+A: Your email account is created automatically before your start date.
+Check your personal email for a welcome message with setup instructions.
+
+Q: Who is my point of contact during onboarding?
+A: Your assigned onboarding buddy will reach out on your first day. If you
+haven't heard from them by 10am, contact your manager directly.
+
+Q: When do I get access to internal tools?
+A: Access to Slack, the HR portal, and internal wikis is granted within
+the first 24 hours of your start date.
