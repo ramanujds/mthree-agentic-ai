@@ -30,7 +30,7 @@ llm = ChatOpenAI(model=DEFAULT_MODEL, base_url=DEFAULT_BASE_URL, api_key="not-ne
 parser = StrOutputParser()
 
 summary_chain = PromptTemplate.from_template("Summarize this in one short sentence:\n{text}") | llm | parser
-translation_chain = PromptTemplate.from_template("Translate this to French:\n{text}") | llm | parser
+translation_chain = PromptTemplate.from_template("Translate this to Hindi:\n{text}") | llm | parser
 sentiment_chain = PromptTemplate.from_template("Reply with one word: positive, negative, or neutral.\n{text}") | llm | parser
 
 def format_report(outputs: dict) -> str:
