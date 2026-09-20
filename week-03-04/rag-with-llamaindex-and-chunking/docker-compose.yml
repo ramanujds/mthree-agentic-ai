@@ -1,0 +1,14 @@
+services:
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: chunking-examples-chromadb
+    ports:
+      - "8000:8000"
+    volumes:
+      - chroma_data:/data
+    environment:
+      - IS_PERSISTENT=TRUE
+      - ANONYMIZED_TELEMETRY=FALSE
+
+volumes:
+  chroma_data:

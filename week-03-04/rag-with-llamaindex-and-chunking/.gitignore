@@ -1,0 +1,13 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Persisted LlamaIndex docstore (parent/child node map for 05_hierarchical_parent_child.py)
+.docstore_hierarchical/
