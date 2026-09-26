@@ -1,0 +1,11 @@
+[project]
+name = "agentic-rag-examples"
+version = "0.1.0"
+description = "One runnable example per agentic LlamaIndex building block: Router Query Engine, Tool Calling, Agent Reasoning Loop, Multi-Document Agent"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "llama-index-core>=0.14.24",
+    "llama-index-embeddings-ollama>=0.10.0",
+    "llama-index-llms-ollama>=0.11.0",
+]

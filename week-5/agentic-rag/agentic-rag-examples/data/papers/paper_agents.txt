@@ -1,0 +1,26 @@
+Title: Agentic Systems: Planning and Tool Use on Top of Retrieval-Augmented Models
+
+Abstract: We describe agentic architectures that extend
+retrieval-augmented language models with planning, tool use, and
+multi-step reasoning, enabling them to complete tasks that require more
+than a single retrieve-and-generate step.
+
+Retrieval-augmented generation improves factual grounding by letting a
+language model condition its answers on retrieved passages, but many
+real-world tasks require more than answering a single question from a
+static document store. Agentic systems address this by wrapping a
+language model in a control loop: the model decides which action to
+take next, whether that is calling a retriever, invoking an external
+tool such as a calculator or an API, or asking a clarifying question,
+observes the result, and repeats until the task is complete.
+
+This design allows an agent to decompose a complex request into
+sub-tasks, gather evidence from multiple sources across several
+retrieval steps rather than one, and combine information from tools
+that a pure retrieve-then-generate pipeline could never call. Agentic
+systems inherit the same grounding benefits described in prior work on
+retrieval-augmented generation, but apply them iteratively, re-querying
+the retriever as the plan evolves and new information is needed. The
+main open challenges are reliably deciding when to stop iterating, and
+recovering gracefully when an intermediate tool call or retrieval step
+returns incorrect or irrelevant information.

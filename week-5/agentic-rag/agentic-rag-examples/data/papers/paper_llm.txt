@@ -1,0 +1,26 @@
+Title: Scaling Transformer-Based Language Models
+
+Abstract: This paper studies how the performance of transformer-based
+language models improves as model size, training data, and compute
+budget increase. We show that model quality follows a predictable
+power-law relationship with these three factors, and that under-trained
+models waste compute relative to their parameter count.
+
+Large language models are trained by predicting the next token in a
+sequence over massive text corpora. As the number of parameters grows
+into the tens of billions, these models begin to exhibit emergent
+capabilities such as few-shot learning, multi-step reasoning, and
+in-context instruction following, none of which were explicitly
+optimized for during training. However, scaling model size alone is not
+sufficient: the ratio of training tokens to parameters strongly affects
+final model quality, and many early large models were significantly
+under-trained relative to their size.
+
+A key limitation of these models is that their knowledge is frozen at
+training time and confined to what was present in the training corpus.
+They cannot access new information, private documents, or facts that
+change after training concludes, and they have no mechanism to verify
+their own outputs against a ground-truth source. This motivates
+architectures that combine a language model's fluent generation
+capabilities with an external mechanism for looking up relevant,
+up-to-date information at inference time.

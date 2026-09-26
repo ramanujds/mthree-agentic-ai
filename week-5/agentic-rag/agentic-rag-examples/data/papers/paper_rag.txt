@@ -1,0 +1,27 @@
+Title: Retrieval-Augmented Generation for Knowledge-Intensive Tasks
+
+Abstract: We introduce a framework that pairs a pretrained language
+model with a retriever over an external document store, allowing the
+model to condition its generations on retrieved evidence rather than
+relying solely on parameters learned at training time.
+
+Building directly on prior work showing that large language models
+develop strong general-purpose language understanding as they scale,
+this paper addresses their central weakness: a fixed, frozen knowledge
+base that cannot be updated without full retraining. Retrieval-augmented
+generation, or RAG, addresses this by splitting the task into two
+stages. First, a retriever encodes the user's query and searches an
+external corpus for the most relevant passages, using either sparse
+keyword matching or dense vector similarity. Second, the language model
+generates its answer conditioned on both the original query and the
+retrieved passages, rather than from parametric memory alone.
+
+This architecture allows the underlying knowledge base to be updated
+simply by adding or removing documents from the retrieval index, with
+no retraining of the language model required. It also improves
+factual accuracy and reduces hallucination, since the model can ground
+its answer in retrieved text and expose the source passages for the
+user to verify. RAG systems are now the dominant architecture for
+building question-answering systems over private or rapidly changing
+document collections, and later work builds further automation on top
+of this retrieve-then-generate pattern.
