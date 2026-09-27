@@ -1,0 +1,9 @@
+[project]
+name = "meal-planner-agent-crewai"
+version = "0.1.0"
+description = "Meal planning + budgeting + grocery shopping app built with CrewAI and local Ollama"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "crewai>=1.15.0",
+]
