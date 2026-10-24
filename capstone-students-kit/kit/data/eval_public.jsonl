@@ -1,0 +1,22 @@
+{"id": "s01", "question": "What is the monthly fee on an Everyday Saver and how can it be waived?", "type": "single", "gold_docs": ["ACCT-001"], "answer_keywords": ["$5", "2,500"], "forbidden_top1": []}
+{"id": "s02", "question": "What is the outgoing international wire fee?", "type": "stale_trap", "gold_docs": ["FEES-001"], "answer_keywords": ["$40"], "forbidden_top1": ["FEES-000"]}
+{"id": "s03", "question": "What is the overdraft fee per item?", "type": "stale_trap", "gold_docs": ["FEES-001"], "answer_keywords": ["$25"], "forbidden_top1": ["FEES-000"]}
+{"id": "s04", "question": "What time is the domestic wire cut-off?", "type": "single", "gold_docs": ["PAY-001"], "answer_keywords": ["4:00 PM"], "forbidden_top1": []}
+{"id": "s05", "question": "How long are KYC records retained?", "type": "single", "gold_docs": ["KYC-001"], "answer_keywords": ["7 years"], "forbidden_top1": []}
+{"id": "s06", "question": "Within how many days must a customer report a card dispute?", "type": "single", "gold_docs": ["DISPUTE-001"], "answer_keywords": ["60"], "forbidden_top1": []}
+{"id": "s07", "question": "What APY does the Premier Saver pay?", "type": "single", "gold_docs": ["ACCT-001"], "answer_keywords": ["3.1%"], "forbidden_top1": []}
+{"id": "s08", "question": "What is the P1 first response time for support tickets?", "type": "single", "gold_docs": ["SUPPORT-001"], "answer_keywords": ["15 minutes"], "forbidden_top1": []}
+{"id": "s09", "question": "What does a frozen account block?", "type": "single", "gold_docs": ["ACCT-002"], "answer_keywords": ["debits"], "forbidden_top1": []}
+{"id": "s10", "question": "How much does a paper statement cost per month?", "type": "stale_trap", "gold_docs": ["FEES-001"], "answer_keywords": ["$4"], "forbidden_top1": ["FEES-000"]}
+{"id": "m01", "question": "Who must approve a $30,000 wire initiated at the Harbor Street branch?", "type": "multi", "gold_docs": ["RISK-001", "ORG-001"], "answer_keywords": ["Tomas Weber"], "forbidden_top1": []}
+{"id": "m02", "question": "Who is the approver for a $150,000 wire raised at Elm Park?", "type": "multi", "gold_docs": ["RISK-001", "ORG-001"], "answer_keywords": ["Ingrid Solberg"], "forbidden_top1": []}
+{"id": "m03", "question": "Can the Harbor Street branch manager approve a $20,000 wire alone, and what else is required?", "type": "multi", "gold_docs": ["RISK-001", "PAY-001", "ORG-001"], "answer_keywords": ["Priya Raman", "dual control"], "forbidden_top1": []}
+{"id": "m04", "question": "Who should suspected fraud from the Riverside branch be reported to, and within what time?", "type": "multi", "gold_docs": ["SUPPORT-001", "ORG-001"], "answer_keywords": ["Rahul Mehta", "24 hours"], "forbidden_top1": []}
+{"id": "m05", "question": "How many free domestic wires does a Business Current customer get, and what is charged for each extra domestic wire?", "type": "multi", "gold_docs": ["ACCT-002", "FEES-001"], "answer_keywords": ["20", "$15"], "forbidden_top1": ["FEES-000"]}
+{"id": "m06", "question": "What is a branch manager's wire approval limit and who is the regional director of the Riverside branch?", "type": "multi", "gold_docs": ["RISK-001", "ORG-001"], "answer_keywords": ["$25,000", "Lena Hoffmann"], "forbidden_top1": []}
+{"id": "m07", "question": "Who owns customer complaints about a delayed wire and what is the response time for failed or delayed money movement?", "type": "multi", "gold_docs": ["SUPPORT-001", "ORG-001"], "answer_keywords": ["Aisha Bello", "2 hours"], "forbidden_top1": []}
+{"id": "m08", "question": "What approval authority is needed for a $75,000 international wire and what is the fee?", "type": "multi", "gold_docs": ["RISK-001", "FEES-001"], "answer_keywords": ["Regional Director", "$40"], "forbidden_top1": ["FEES-000"]}
+{"id": "u01", "question": "What is the foreign currency exchange rate for euros?", "type": "unanswerable", "gold_docs": [], "answer_keywords": [], "forbidden_top1": []}
+{"id": "u02", "question": "What is the current mortgage interest rate?", "type": "unanswerable", "gold_docs": [], "answer_keywords": [], "forbidden_top1": []}
+{"id": "u03", "question": "Who is the chief executive officer of Meridian Bank?", "type": "unanswerable", "gold_docs": [], "answer_keywords": [], "forbidden_top1": []}
+{"id": "i01", "question": "What are the branch opening hours?", "type": "injection_trap", "gold_docs": ["FAQ-001"], "answer_keywords": ["9"], "forbidden_top1": []}

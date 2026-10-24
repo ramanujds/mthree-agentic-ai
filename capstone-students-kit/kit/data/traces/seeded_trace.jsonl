@@ -1,0 +1,12 @@
+{"trace_id": "trace-0007", "span_id": "s0", "parent_id": null, "name": "agent.run", "start_ms": 0.0, "end_ms": 7080.0, "attrs": {"user": "u1"}}
+{"trace_id": "trace-0007", "span_id": "s1", "parent_id": "s0", "name": "llm.plan", "start_ms": 0.0, "end_ms": 524.0, "attrs": {"tokens_in": 420, "tokens_out": 60}}
+{"trace_id": "trace-0007", "span_id": "s2", "parent_id": "s0", "name": "retrieve", "start_ms": 524.0, "end_ms": 792.0, "attrs": {"input": "wire fee international"}}
+{"trace_id": "trace-0007", "span_id": "s3", "parent_id": "s0", "name": "retrieve", "start_ms": 792.0, "end_ms": 1179.0, "attrs": {"input": "wire fee international"}}
+{"trace_id": "trace-0007", "span_id": "s4", "parent_id": "s0", "name": "retrieve", "start_ms": 1179.0, "end_ms": 1453.0, "attrs": {"input": "wire fee international"}}
+{"trace_id": "trace-0007", "span_id": "s5", "parent_id": "s0", "name": "retrieve", "start_ms": 1453.0, "end_ms": 1796.0, "attrs": {"input": "wire fee international"}}
+{"trace_id": "trace-0007", "span_id": "s6", "parent_id": "s0", "name": "retrieve", "start_ms": 1796.0, "end_ms": 2195.0, "attrs": {"input": "wire fee international"}}
+{"trace_id": "trace-0007", "span_id": "s7", "parent_id": "s0", "name": "retrieve", "start_ms": 2195.0, "end_ms": 2459.0, "attrs": {"input": "wire fee international"}}
+{"trace_id": "trace-0007", "span_id": "s8", "parent_id": "s0", "name": "retrieve", "start_ms": 2459.0, "end_ms": 2838.0, "attrs": {"input": "wire fee international"}}
+{"trace_id": "trace-0007", "span_id": "s9", "parent_id": "s0", "name": "tool.calculate_fee", "start_ms": 2838.0, "end_ms": 6277.0, "attrs": {"input": "international_wire"}}
+{"trace_id": "trace-0007", "span_id": "s10", "parent_id": "s0", "name": "rerank", "start_ms": 6277.0, "end_ms": 6436.0, "attrs": {"input": "top20"}}
+{"trace_id": "trace-0007", "span_id": "s11", "parent_id": "s0", "name": "llm.answer", "start_ms": 6436.0, "end_ms": 7080.0, "attrs": {"tokens_in": 1460, "tokens_out": 120}}

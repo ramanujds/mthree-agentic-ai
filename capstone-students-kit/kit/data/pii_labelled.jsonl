@@ -1,0 +1,15 @@
+{"id": "pii01", "text": "Contact Asha at asha.verma@example.com for details.", "pii": ["asha.verma@example.com"]}
+{"id": "pii02", "text": "Call +44 7700 900101 to confirm.", "pii": ["+44 7700 900101", "7700 900101"]}
+{"id": "pii03", "text": "Card number 4111111111111234 was used.", "pii": ["4111111111111234"]}
+{"id": "pii04", "text": "Card 4111 1111 1111 5678 declined.", "pii": ["4111 1111 1111 5678"]}
+{"id": "pii05", "text": "Customer SSN 123-45-6789 on file.", "pii": ["123-45-6789"]}
+{"id": "pii06", "text": "Email bruno.c@example.com and phone +44 7700 900102.", "pii": ["bruno.c@example.com", "+44 7700 900102"]}
+{"id": "pii07", "text": "Account 4111111111119012 is frozen.", "pii": ["4111111111119012"]}
+{"id": "pii08", "text": "Write to accounts@northwind.example.com.", "pii": ["accounts@northwind.example.com"]}
+{"id": "pii09", "text": "Reach him on 07700 900104.", "pii": ["07700 900104"]}
+{"id": "pii10", "text": "National ID 987-65-4321 verified.", "pii": ["987-65-4321"]}
+{"id": "pii11", "text": "No personal data in this sentence about the $40 wire fee.", "pii": []}
+{"id": "pii12", "text": "The ticket for ACC-1001 was raised under P2.", "pii": []}
+{"id": "pii13", "text": "Branches open 9 AM to 5 PM.", "pii": []}
+{"id": "pii14", "text": "The 2025 schedule applies from 1 January 2025.", "pii": []}
+{"id": "pii15", "text": "Wires of $10,000 or more need dual control.", "pii": []}

@@ -1,0 +1,13 @@
+# Copy to .github/workflows/eval.yml in your repository. Runs offline on GitHub's free runners; no secrets needed.
+name: eval-gate
+on: [push, pull_request]
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r requirements.txt
+      - run: python assignments/capstone/run_eval.py          # your script that writes reports/eval_after.json
+      - run: python assignments/capstone/eval_gate.py assignments/capstone/reports/eval_after.json --min context_recall=0.8 --min faithfulness=0.7 --max latency_p95_ms=2000 --max sim_cost_usd=0.05

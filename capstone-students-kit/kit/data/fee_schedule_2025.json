@@ -1,0 +1,21 @@
+{
+  "schedule_id": "FEES-001",
+  "effective": "2025-01-01",
+  "fees": {
+    "domestic_wire": 15.0,
+    "international_wire": 40.0,
+    "incoming_wire": 10.0,
+    "wire_recall": 35.0,
+    "stop_payment": 20.0,
+    "overdraft": 25.0,
+    "paper_statement": 4.0,
+    "card_replacement": 30.0,
+    "excess_withdrawal": 10.0
+  },
+  "free_allowance": {
+    "domestic_wire": {
+      "business_current": 20,
+      "premier_saver": 5
+    }
+  }
+}

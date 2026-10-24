@@ -1,0 +1,62 @@
+{
+  "accounts": {
+    "ACC-1001": {
+      "holder": "Asha Verma",
+      "email": "asha.verma@example.com",
+      "phone": "+44 7700 900101",
+      "product": "Everyday Saver",
+      "status": "active",
+      "balance": 3200.0,
+      "account_number": "4111111111111234",
+      "beneficiaries": [
+        "BEN-10"
+      ]
+    },
+    "ACC-1002": {
+      "holder": "Bruno Castillo",
+      "email": "bruno.c@example.com",
+      "phone": "+44 7700 900102",
+      "product": "Basic Current",
+      "status": "active",
+      "balance": 410.0,
+      "account_number": "4111111111115678",
+      "beneficiaries": [
+        "BEN-10",
+        "BEN-22"
+      ]
+    },
+    "ACC-1003": {
+      "holder": "Northwind Traders Ltd",
+      "email": "accounts@northwind.example.com",
+      "phone": "+44 7700 900103",
+      "product": "Business Current",
+      "status": "frozen",
+      "freeze_reason": "KYC review",
+      "balance": 18250.0,
+      "account_number": "4111111111119012",
+      "beneficiaries": []
+    },
+    "ACC-1004": {
+      "holder": "Chidi Okoro",
+      "email": "chidi.o@example.com",
+      "phone": "+44 7700 900104",
+      "product": "Premier Saver",
+      "status": "active",
+      "balance": 15000.0,
+      "account_number": "4111111111113456",
+      "beneficiaries": [
+        "BEN-10"
+      ]
+    },
+    "ACC-1005": {
+      "holder": "Dana Petrov",
+      "email": "dana.p@example.com",
+      "phone": "+44 7700 900105",
+      "product": "Basic Current",
+      "status": "closed",
+      "balance": 0.0,
+      "account_number": "4111111111117890",
+      "beneficiaries": []
+    }
+  }
+}

@@ -1,0 +1,3 @@
+{"id": "o01", "question": "Does a $12,000 international wire need dual control?", "gold_docs": ["PAY-001"]}
+{"id": "o02", "question": "What is the outgoing international wire fee?", "gold_docs": ["FEES-001"], "expected_tool_calls": [{"name": "calculate_fee", "args": {"fee_type": "international_wire"}}]}
+{"id": "o03", "question": "Does the bank offer crypto trading accounts?", "gold_docs": []}

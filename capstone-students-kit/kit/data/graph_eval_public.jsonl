@@ -1,0 +1,6 @@
+{"id": "g01", "question": "Who is the regional director overseeing the Harbor Street branch?", "answer_entities": ["Tomas Weber"]}
+{"id": "g02", "question": "Which branch manager works in the South Region?", "answer_entities": ["Marcus Chen"]}
+{"id": "g03", "question": "Who is the regional director of the region that Elm Park belongs to?", "answer_entities": ["Tomas Weber"]}
+{"id": "g04", "question": "Which regions are part of Meridian Bank and who directs them?", "answer_entities": ["Tomas Weber", "Lena Hoffmann"]}
+{"id": "g05", "question": "Which branch managers work under Tomas Weber?", "answer_entities": ["Priya Raman", "Daniel Okafor"]}
+{"id": "g06", "question": "Which branches are in the same region as Harbor Street?", "answer_entities": ["Elm Park"]}

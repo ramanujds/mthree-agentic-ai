@@ -1,0 +1,286 @@
+{
+  "ORG-001": {
+    "entities": [
+      {
+        "name": "Tomas Weber",
+        "type": "Person",
+        "aliases": [
+          "T. Weber",
+          "Regional Director Weber"
+        ]
+      },
+      {
+        "name": "Priya Raman",
+        "type": "Person",
+        "aliases": [
+          "P. Raman"
+        ]
+      },
+      {
+        "name": "Daniel Okafor",
+        "type": "Person",
+        "aliases": [
+          "D. Okafor"
+        ]
+      },
+      {
+        "name": "Lena Hoffmann",
+        "type": "Person",
+        "aliases": [
+          "L. Hoffmann"
+        ]
+      },
+      {
+        "name": "Marcus Chen",
+        "type": "Person",
+        "aliases": [
+          "M. Chen"
+        ]
+      },
+      {
+        "name": "Ingrid Solberg",
+        "type": "Person",
+        "aliases": [
+          "I. Solberg"
+        ]
+      },
+      {
+        "name": "Rahul Mehta",
+        "type": "Person",
+        "aliases": [
+          "R. Mehta"
+        ]
+      },
+      {
+        "name": "Aisha Bello",
+        "type": "Person",
+        "aliases": [
+          "A. Bello"
+        ]
+      },
+      {
+        "name": "North Region",
+        "type": "Region",
+        "aliases": [
+          "North"
+        ]
+      },
+      {
+        "name": "South Region",
+        "type": "Region",
+        "aliases": [
+          "South"
+        ]
+      },
+      {
+        "name": "Harbor Street",
+        "type": "Branch",
+        "aliases": [
+          "Harbor St",
+          "Harbor Street branch"
+        ]
+      },
+      {
+        "name": "Elm Park",
+        "type": "Branch",
+        "aliases": [
+          "Elm Park branch"
+        ]
+      },
+      {
+        "name": "Riverside",
+        "type": "Branch",
+        "aliases": [
+          "Riverside branch"
+        ]
+      },
+      {
+        "name": "Meridian Bank",
+        "type": "Organisation",
+        "aliases": [
+          "Meridian"
+        ]
+      }
+    ],
+    "triples": [
+      {
+        "head": "Tomas Weber",
+        "relation": "REGIONAL_DIRECTOR_OF",
+        "tail": "North Region"
+      },
+      {
+        "head": "Lena Hoffmann",
+        "relation": "REGIONAL_DIRECTOR_OF",
+        "tail": "South Region"
+      },
+      {
+        "head": "North Region",
+        "relation": "PART_OF",
+        "tail": "Meridian Bank"
+      },
+      {
+        "head": "South Region",
+        "relation": "PART_OF",
+        "tail": "Meridian Bank"
+      },
+      {
+        "head": "Harbor Street",
+        "relation": "IN_REGION",
+        "tail": "North Region"
+      },
+      {
+        "head": "Elm Park",
+        "relation": "IN_REGION",
+        "tail": "North Region"
+      },
+      {
+        "head": "Riverside",
+        "relation": "IN_REGION",
+        "tail": "South Region"
+      },
+      {
+        "head": "Priya Raman",
+        "relation": "BRANCH_MANAGER_OF",
+        "tail": "Harbor Street"
+      },
+      {
+        "head": "Daniel Okafor",
+        "relation": "BRANCH_MANAGER_OF",
+        "tail": "Elm Park"
+      },
+      {
+        "head": "Marcus Chen",
+        "relation": "BRANCH_MANAGER_OF",
+        "tail": "Riverside"
+      },
+      {
+        "head": "Ingrid Solberg",
+        "relation": "HEAD_OF_PAYMENTS_OF",
+        "tail": "Meridian Bank"
+      },
+      {
+        "head": "Rahul Mehta",
+        "relation": "HEAD_OF_COMPLIANCE_OF",
+        "tail": "Meridian Bank"
+      },
+      {
+        "head": "Aisha Bello",
+        "relation": "HEAD_OF_CUSTOMER_SUPPORT_OF",
+        "tail": "Meridian Bank"
+      }
+    ]
+  },
+  "RISK-001": {
+    "entities": [
+      {
+        "name": "Teller",
+        "type": "Role",
+        "aliases": []
+      },
+      {
+        "name": "Branch Manager",
+        "type": "Role",
+        "aliases": [
+          "Branch Mgr"
+        ]
+      },
+      {
+        "name": "Regional Director",
+        "type": "Role",
+        "aliases": [
+          "Regional Dir."
+        ]
+      },
+      {
+        "name": "Head of Payments",
+        "type": "Role",
+        "aliases": []
+      }
+    ],
+    "triples": [
+      {
+        "head": "Teller",
+        "relation": "APPROVAL_LIMIT",
+        "tail": "$5,000"
+      },
+      {
+        "head": "Branch Manager",
+        "relation": "APPROVAL_LIMIT",
+        "tail": "$25,000"
+      },
+      {
+        "head": "Regional Director",
+        "relation": "APPROVAL_LIMIT",
+        "tail": "$100,000"
+      },
+      {
+        "head": "Head of Payments",
+        "relation": "APPROVAL_LIMIT",
+        "tail": "above $100,000"
+      }
+    ]
+  },
+  "SUPPORT-001": {
+    "entities": [
+      {
+        "name": "Suspected Fraud",
+        "type": "Concept",
+        "aliases": [
+          "fraud"
+        ]
+      },
+      {
+        "name": "Customer Complaints",
+        "type": "Concept",
+        "aliases": [
+          "complaints"
+        ]
+      },
+      {
+        "name": "Head of Compliance",
+        "type": "Role",
+        "aliases": []
+      },
+      {
+        "name": "Head of Customer Support",
+        "type": "Role",
+        "aliases": []
+      }
+    ],
+    "triples": [
+      {
+        "head": "Suspected Fraud",
+        "relation": "REPORTED_TO",
+        "tail": "Head of Compliance"
+      },
+      {
+        "head": "Customer Complaints",
+        "relation": "OWNED_BY",
+        "tail": "Head of Customer Support"
+      }
+    ]
+  },
+  "PAY-001": {
+    "entities": [
+      {
+        "name": "Wire",
+        "type": "Concept",
+        "aliases": [
+          "wire transfer"
+        ]
+      },
+      {
+        "name": "Dual Control",
+        "type": "Concept",
+        "aliases": []
+      }
+    ],
+    "triples": [
+      {
+        "head": "Wire",
+        "relation": "REQUIRES_ABOVE_$10,000",
+        "tail": "Dual Control"
+      }
+    ]
+  }
+}
